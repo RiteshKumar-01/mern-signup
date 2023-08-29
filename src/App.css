@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+.navbar{
+    width: 100vw;
+    height: 80px;
+    /* background-color: rgb(196, 199, 201); */
+    border-bottom: 1px solid rgb(196, 199, 201);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-left{
+    height: 80%;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-right .btn-sign{
+    background-color: black;
+    color: #fff;
+    padding: 13px 28px;
+    font-size: 15px;
+    font-family: monospace;
+    margin: 0px 16px 0px 0px;
+    font-weight: 600;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-right .btn-login{
+    padding: 13px 28px;
+    font-size: 15px;
+    font-family: monospace;
+    margin: 0px 16px 0px 0px;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    background-color: #F2F2F2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/header-back.png);
+}
+
+.hero-body{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-body h1{
+    line-height: 100px;
+    margin: 33.6px 0px;
+    padding: 0px;
+    font-size: 80px;
+    /* font-family: Poppins sans-serif; */
+}
+
+.hero-body h3{
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hero-body a{
+    background-color: rgb(255, 195, 41);
+    color: black;
+    padding: 16px 32px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    border-radius: 100px;
+    border: none;
+    margin: 33.6px 0px;
+    text-decoration: none;
+}
+
+/* Sign up component styles */
+.signup{
+    height: 100vh;
+    width: 100vw;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+.signup img{
+    height: 80px;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+}
+.sign-body{
+    height: 80%;
+    width: 29%;
+    background-color: #fff;
+    /* border: 1px solid black; */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, .2);
+    padding: 40px;
+}
+
+.sign-body h2{
+    padding: 0px 0px 20px 0px;
+    margin: 0px 0px 16px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 27.6px;
+    border-bottom: 1px solid rgb(218 214 214 / 70%);
+    color: rgba(0,0,0,.7);
+}
+
+.form-elem{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-elem .form-type p{
+    margin-bottom: 10px;
+    line-height: 18.4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.form-elem .form-type input{
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid rgb(218 214 214 / 70%);
+}
+
+.form-type .flex-box{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
+
+}
+.form-type .flex-box input{
+    height: 30px;
+    width: 30px;
+}
+
+.form-elem button{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: 1px solid rgb(218 214 214 / 70%);
+}
+
+.signup a{
+    margin-top: -30px;
+    text-decoration: underline;
 }
