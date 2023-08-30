@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./assets/logo1.png";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   return (
@@ -20,7 +21,9 @@ const SignIn = () => {
           <button>Sign In</button>
         </div>
       </div>
-      <a>Create Account</a>
+      <Link to="/signup" className="login-btn">
+        Create Account
+      </Link>
     </div>
   );
 };

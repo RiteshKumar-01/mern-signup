@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import logo from "./assets/logo1.png";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -9,12 +10,12 @@ const Nav = () => {
         <img src={logo} alt="navbar logo" />
       </div>
       <div className="navbar-right">
-        <a href="/" className="btn-sign">
+        <Link to="/signup" className="btn-sign">
           Sign Up
-        </a>
-        <a href="/" className="btn-login">
+        </Link>
+        <Link to="/login" className="btn-login">
           Sign In
-        </a>
+        </Link>
       </div>
     </div>
   );

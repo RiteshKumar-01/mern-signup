@@ -1,7 +1,6 @@
 .navbar{
     width: 100vw;
     height: 80px;
-    /* background-color: rgb(196, 199, 201); */
     border-bottom: 1px solid rgb(196, 199, 201);
     display: flex;
     align-items: center;
@@ -87,7 +86,7 @@
     font-weight: 400;
 }
 
-.hero-body a{
+.hero-body .body-btn{
     background-color: rgb(255, 195, 41);
     color: black;
     padding: 16px 32px;
@@ -102,7 +101,7 @@
 
 /* Sign up component styles */
 .signup{
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: #F2F2F2;
     display: flex;
@@ -114,6 +113,7 @@
 }
 
 .signup img{
+    margin-top: 25px;
     height: 80px;
     width: auto;
     object-fit: contain;
@@ -182,7 +182,13 @@
     border: 1px solid rgb(218 214 214 / 70%);
 }
 
-.signup a{
+.signup .sign-btn{
     margin-top: -30px;
     text-decoration: underline;
+    margin-bottom: 100px;
 }
+
+.signup .login-btn{
+    margin-bottom: 1000px;
+}
+
